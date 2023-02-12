@@ -13,8 +13,8 @@ class CreditCardDateOfExpiryFormatter extends TextInputFormatter {
     var newText = newValue.text;
     var oldText = oldValue.text;
     bool isAdding = oldText.length < newText.length;
-    print('newText: $newText');
-    print('newText length: ${newText.length}');
+    // print('newText: $newText');
+    // print('newText length: ${newText.length}');
 
     String convertDeletedText(String convertText) {
       String deletedText = '';
@@ -32,7 +32,7 @@ class CreditCardDateOfExpiryFormatter extends TextInputFormatter {
     String deletedNewText = convertDeletedText(newText);
     String deletedOldText = convertDeletedText(oldText);
 
-    print('deletedNewText: $deletedNewText');
+    // print('deletedNewText: $deletedNewText');
 
     String value = '';
     for (var i = 0; i < deletedNewText.length; i++) {
@@ -49,7 +49,7 @@ class CreditCardDateOfExpiryFormatter extends TextInputFormatter {
       }
     }
 
-    print('value: $value');
+    // print('value: $value');
 
     /// OffSetを更新
     /// 2文字になった時
